@@ -1,6 +1,5 @@
 name: test-1
 
-
 on:
   schedule:
     - cron: "30 5 * * *"
