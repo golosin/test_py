@@ -59,4 +59,4 @@ jobs:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         destination_dir:  test-2/${{github.run_number}}
-        PUBLISH_DIR: test-2/$allure-history
+        PUBLISH_DIR: test-2/${{github.run_number}}
