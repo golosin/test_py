@@ -12,5 +12,4 @@ build:
         pip install -r requirements.txt
         pip install pipenv
         pipenv install
-    - uses: actions/checkout@v2
 
