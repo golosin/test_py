@@ -60,3 +60,4 @@ jobs:
         PUBLISH_BRANCH: gh-pages
         subfolder: test-2
         PUBLISH_DIR: allure-history
+        keep_files: true
