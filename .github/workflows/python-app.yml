@@ -32,4 +32,4 @@ jobs:
     - name: Test with pytest
       id: test
       run: |
-        pytest test_1
+        pytest test/test_1.py
