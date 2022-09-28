@@ -9,7 +9,7 @@ on:
   push:
     paths:
       - 'test/test_1.py'
-      - '.github/workflows/app-test-1.yaml'
+      - '.github/workflows/app-test-1.yml'
 
 jobs:
 
