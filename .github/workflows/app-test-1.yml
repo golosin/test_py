@@ -7,9 +7,9 @@ on:
   schedule:
     - cron: "30 5 * * *"
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    paths:
+      - 'test/test_1.py'
+      - '.github/workflows/app-test-1.yaml'
 
 jobs:
 
