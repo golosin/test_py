@@ -28,5 +28,4 @@ build:
 
     - name: Test with pytest
       id: test
-      run: |
-        pytest test_function
+      run: pytest test_function
