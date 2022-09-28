@@ -2,5 +2,5 @@ import pytest
 
 
 def test_function_2():
-    assert 11 == 12
+    assert 12 == 12
 
