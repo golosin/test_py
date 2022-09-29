@@ -1,0 +1,31 @@
+name: Python application
+
+on:
+  schedule:
+    - cron: "40 5 * * *"
+  push:
+    paths:
+      - '.github/workflows/report.yml'
+
+jobs:
+ sending-email:
+   runs-on: ubuntu-latest
+   if: always()
+   steps:
+     - run: |
+         echo "<h1> API - автотесты :  </h1> <div> <h2><a href="https://golosin.github.io/test_py/test-1">ссылка на отчет test-1</a>
+          <a href="https://golosin.github.io/test_py/test-2">ссылка на отчет test-2</a></h2></div>" > temp.html
+     - name: Send email, test report
+       uses: dawidd6/action-send-mail@v3
+       with:
+         server_address: smtp.gmail.com
+         server_port: 465
+         username: ${{ secrets.GMAIL_LOGIN }}
+         password: ${{ secrets.GMAIL_PASS }}
+         subject: Report Email
+         html_body: file://temp.html
+         to: ${{ secrets.SEND_TO_MAIL }}
+         from: ${{ secrets.GMAIL_LOGIN }}
+         secure: true
+         ignore_cert: true
+         convert_markdown: true
