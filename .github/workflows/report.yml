@@ -13,7 +13,8 @@ jobs:
    if: always()
    steps:
      - run: |
-         echo "<h1> API - автотесты :  </h1> <div> <h2><a href="https://golosin.github.io/test_py/test-1">ссылка на отчет test-1</a>
+         echo "<h1> API - автотесты :  </h1> <div> <h2>
+          <a href="https://golosin.github.io/test_py/test-1">ссылка на отчет test-1</a> <br />
           <a href="https://golosin.github.io/test_py/test-2">ссылка на отчет test-2</a></h2></div>" > temp.html
      - name: Send email, test report
        uses: dawidd6/action-send-mail@v3
