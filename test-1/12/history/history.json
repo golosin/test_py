@@ -1,1 +1,0 @@
-{"ef16983d4eb79a8ab3162dc23d9610c2":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"ee7114768ea3b65d","reportUrl":"https://golosin.github.io/test_py/test-1/12//#testresult/ee7114768ea3b65d","status":"passed","time":{"start":1664431871850,"stop":1664431871851,"duration":1}}]}}
