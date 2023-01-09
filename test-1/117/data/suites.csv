@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Dec 20 05:32:28 GMT 2022","Tue Dec 20 05:32:28 GMT 2022","0","test","test_1","","","","test_function_1",""
+"passed","Mon Jan 09 05:32:15 GMT 2023","Mon Jan 09 05:32:15 GMT 2023","1","test","test_1","","","","test_function_1",""
